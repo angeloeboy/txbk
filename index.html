@@ -56,8 +56,8 @@
     <div class="hero-section">
         <div class="text-container" data-aos="fade-up">
             <h1><span>Oursourced</span> accounting, finance and tax services</h1>
-            <button class="whyUs-btn">Why us</button>
-            <button class="howDoesItWork-btn">How does it work</button>
+            <button class="whyUs-btn"> <a href="#why-us"> Why us</a></button>
+            <button class="howDoesItWork-btn"><a href="#how-does-it-work">How does it work</a> </button>
         </div>
     </div>
     <div class="services-section" id="services" >
@@ -161,20 +161,35 @@
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous">
     </script>
     <script>
-        $(".menu").click(() => {
-            toggleMenu();
-            console.log("clicked")
-        })
 
-        let toggleMenu = () => {
-            if($(".nav-links").hasClass("clicked")){
-                $(".nav-links").css("transform", "translateX(100%)");
-                $(".nav-links").removeClass("clicked")
-            }else{
-                $(".nav-links").css("transform", "translateX(0%)");
-                $(".nav-links").addClass("clicked")
+        $(document).ready(() => {
+            $(".menu").click(() => {
+                toggleMenu();
+                console.log("clicked")
+            })
+
+            if($(window).width() < 750){
+                console.log("ajsdf")
+                $(".nav-links").click(() => {
+                    toggleMenu();
+                })
             }
-        }
+  
+
+            let toggleMenu = () => {
+                if($(".nav-links").hasClass("clicked")){
+                    $(".nav-links").css("transform", "translateX(100%)");
+                    $(".nav-links").removeClass("clicked")
+                }else{
+                    $(".nav-links").css("transform", "translateX(0%)");
+                    $(".nav-links").addClass("clicked")
+                }
+            }
+        })
+       
+
+
+
     </script>
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
       <script>
