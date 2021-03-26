@@ -1,0 +1,78 @@
+.hero-section {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("assets/hero-image.jpg");
+  height: 90vh;
+  background-size: cover;
+  margin-top: 10vh;
+  display: flex;
+  align-items: center;
+  padding: 0px 10%;
+
+  .text-container {
+    width: 600px;
+    h1 {
+      color: white;
+      font-size: 2.5rem;
+      span {
+        color: $color-green;
+      }
+    }
+
+    button {
+      text-transform: uppercase;
+      width: 200px;
+      padding: 20px;
+      outline: none;
+      margin-top: 40px;
+    }
+
+    .whyUs-btn {
+      background-color: transparent;
+      color: white;
+      border: 1px solid $color-green;
+    }
+
+    .howDoesItWork-btn {
+      background-color: $color-green;
+      border: none;
+      margin-left: 20px;
+    }
+  }
+}
+
+@media only screen and(max-width: 700px) {
+  .hero-section {
+    background-position: center;
+  }
+}
+
+@media only screen and(max-width: 600px) {
+  .hero-section {
+    .text-container {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and(max-width: 547px) {
+  .hero-section {
+    .text-container {
+      width: 100%;
+      // background-color: red;
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      button {
+        display: block;
+        margin: 30px auto;
+        width: 100%;
+      }
+
+      .howDoesItWork-btn {
+        margin: 10px auto;
+      }
+    }
+  }
+}

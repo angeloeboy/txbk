@@ -1,0 +1,33 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+$color-green: #0dffb6;
+
+html,
+body {
+  overflow-x: hidden;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap");
+@import "styles/nav";
+@import "styles/hero";
+@import "styles/services";
+@import "styles/why";
+@import "styles/how";
+
+footer {
+  background-color: black;
+  height: 100px;
+  width: 100vw;
+  color: white;
+  position: relative;
+  p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
