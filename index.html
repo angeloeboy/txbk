@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TXBK </title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -53,16 +54,16 @@
         </div>
     </nav>
     <div class="hero-section">
-        <div class="text-container">
+        <div class="text-container" data-aos="fade-up">
             <h1><span>Oursourced</span> accounting, finance and tax services</h1>
             <button class="whyUs-btn">Why us</button>
             <button class="howDoesItWork-btn">How does it work</button>
         </div>
     </div>
-    <div class="services-section" id="services">
+    <div class="services-section" id="services" >
         <h1>Services</h1>
         <div class="services-container">
-            <div class="service">
+            <div class="service" data-aos="fade-up">
                 <div class="service-img-container">
                     <img src="assets/service-tax.png" alt="">
                 </div>
@@ -72,7 +73,7 @@
                     <p class="service-price">As low as P1,000 per returns filed.</p>
                 </div>
             </div>
-            <div class="service">
+            <div class="service" data-aos="fade-up" data-aos-delay="200">
                 <div class="service-img-container">
                     <img src="assets/service-accounting.png" alt="">
                 </div>
@@ -82,7 +83,7 @@
                     <p class="service-price">As low as P1,500 per month.</p>
                 </div>
             </div>
-            <div class="service">
+            <div class="service" data-aos="fade-up" data-aos-delay="400">
                 <div class="service-img-container">
                     <img src="assets/service-bookkeeping.png" alt="">
                 </div>
@@ -102,19 +103,19 @@
         <div class="text-container">
             <h1 class="title">Why TXBK</h1>
 
-            <div class="feature">
+            <div class="feature" data-aos="fade-left">
                 <h1>Core business focus</h1>
                 <p>We aim to reduce your accounting-related burden, enabling you to focus on your core business.</p>
             </div>
-            <div class="feature">
+            <div class="feature" data-aos="fade-left" >
                 <h1>Technology-driven</h1>
                 <p>We use cloud-based accounting tools to simplify and automate your accounting processes.</p>
             </div>
-            <div class="feature">
+            <div class="feature" data-aos="fade-left" >
                 <h1>Cost-effective</h1>
                 <p>We aim to reduce your recruitment, training and furnishing costs and efforts.</p>
             </div>
-            <div class="feature">
+            <div class="feature" data-aos="fade-left" >
                 <h1>Professional yet personable</h1>
                 <p>We will give you an easy access to our talented and experienced professionals.</p>
             </div>
@@ -126,7 +127,7 @@
         </div>
         <div class="text-container">
             <h1 class="title">How does it work</h1>
-            <div class="steps">
+            <div class="steps"  data-aos="fade-right">
                 <div class="step-no">
                     <p>1</p>
                 </div>
@@ -134,7 +135,7 @@
                     <p>You’ll give us your documents.</p>
                 </div>
             </div>
-            <div class="steps">
+            <div class="steps" data-aos="fade-right">
                 <div class="step-no">
                     <p>2</p>
                 </div>
@@ -142,7 +143,7 @@
                     <p>We’ll do the work.</p>
                 </div>
             </div>
-            <div class="steps">
+            <div class="steps" data-aos="fade-right">
                 <div class="step-no">
                     <p>3</p>
                 </div>
@@ -150,7 +151,7 @@
                     <p>We deliver your tax returns, books of accounts, and/or financial reports.</p>
                 </div>
             </div>
-            <button><a href="">Contact Us</a></button>
+            <button><a href="https://www.facebook.com/TXBKCPA" target="_blank">Contact Us</a></button>
         </div>
         
     </div>
@@ -175,5 +176,9 @@
             }
         }
     </script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
 </body>
 </html>
